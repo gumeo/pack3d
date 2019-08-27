@@ -54,6 +54,7 @@ func main() {
 		size := mesh.BoundingBox().Size()
 		fmt.Printf("  %d triangles\n", len(mesh.Triangles))
 		fmt.Printf("  %g x %g x %g\n", size.X, size.Y, size.Z)
+		fmt.Printf("  %d leaf nodes in bvh\n", bvhDetail)
 
 		done = timed("centering mesh")
 		mesh.Center()
